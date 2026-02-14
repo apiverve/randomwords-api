@@ -1,23 +1,25 @@
 openapi: 3.0.4
 info:
   title: Random Word
-  description: Random Word is a simple tool for getting random words. It returns a random word.
+  description: >-
+    Random Word is a simple tool for getting random words. It returns a random
+    word.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/randomwords:
     get:
       summary: Get Random Word
-      description: Random Word is a simple tool for getting random words. It returns a random word.
+      description: Get a random word, including its definition and pronunciation
       operationId: randomwords
       parameters: []
       responses:
@@ -35,21 +37,24 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
-                  word: intercessionate
+                  word: persevering
                   definitions:
-                  - To entreat. [Obs.]
+                    - >-
+                      Characterized by perseverance; persistent. --
+                      Per`se*ver"ing*ly, adv.
+                  pronunciation: P ER0 S AH0 V IH1 R IH0 NG
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -57,4 +62,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
