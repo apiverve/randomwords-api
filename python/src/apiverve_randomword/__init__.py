@@ -1,1 +1,3 @@
-from .apiClient import RandomwordsAPIClient
+from .apiClient import RandomwordsAPIClient, RandomwordsAPIClientError
+
+__all__ = ['RandomwordsAPIClient', 'RandomwordsAPIClientError']
