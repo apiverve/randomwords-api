@@ -219,8 +219,9 @@ from apiverve_randomword.apiClient import RandomwordsAPIClient
 
 api = RandomwordsAPIClient("[YOUR_API_KEY]")
 
+# This API does not require a Query
+
 try:
-    # This API does not require a Query
     result = api.execute()
     print(result)
 finally:
