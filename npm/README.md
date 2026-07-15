@@ -116,10 +116,11 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "word": "intercessionate",
+    "word": "persevering",
     "definitions": [
-      "To entreat. [Obs.]"
-    ]
+      "Characterized by perseverance; persistent. -- Per`se*ver\"ing*ly, adv."
+    ],
+    "pronunciation": "P ER0 S AH0 V IH1 R IH0 NG"
   }
 }
 ```
