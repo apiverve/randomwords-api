@@ -25,6 +25,9 @@ namespace APIVerve.API.RandomWord
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -34,5 +37,20 @@ namespace APIVerve.API.RandomWord
 
         [JsonProperty("definitions")]
         public string[] Definitions { get; set; }
+
+        [JsonProperty("pronunciation")]
+        public string Pronunciation { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
