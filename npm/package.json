@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/randomwords",
-  "version": "1.2.0",
-  "description": "Random Word is a simple tool for getting random words. It returns a random word.",
+  "version": "1.2.2",
+  "description": "Random Word is a random word generator API that selects a random English word from the dictionary on each request. Paid plans add dictionary definitions and ARPABET phonetic pronunciation.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "random word", "random words", "random word generator", "random words generator", "random word api"
+    "random word api", "random word generator api", "random words api", "word api", "random word generator"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/randomwords-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/randomwords?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/randomwords?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
