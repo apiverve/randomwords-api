@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Random Word
   description: >-
-    Random Word is a simple tool for getting random words. It returns a random
-    word.
+    Random Word is a random word generator API that selects a random English
+    word from the dictionary on each request. Paid plans add dictionary
+    definitions and ARPABET phonetic pronunciation.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/randomwords:
     get:
-      summary: Get Random Word
+      summary: Random Word
       description: Get a random word, including its definition and pronunciation
       operationId: randomwords
       parameters: []

@@ -1,13 +1,13 @@
-# [Random Word API](https://apiverve.com/marketplace/randomwords?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Random Word API](https://apiverve.com/marketplace/randomwords?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Random Word is a simple tool for getting random words. It returns a random word.
+Random Word is a random word generator API that selects a random English word from the dictionary on each request. Paid plans add dictionary definitions and ARPABET phonetic pronunciation.
 
 The Random Word API provides a simple, reliable way to integrate random word functionality into your applications. Built for developers who need production-ready random word capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/randomwords?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/randomwords?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/randomwords?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/randomwords?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -157,7 +157,7 @@ go get github.com/apiverve/randomwords-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Random Word API](https://apiverve.com/marketplace/randomwords?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Random Word API](https://apiverve.com/marketplace/randomwords?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/randomwords](https://docs.apiverve.com/ref/randomwords)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -187,11 +187,32 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Random Word API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "word": "persevering",
+    "definitions": [
+      "Characterized by perseverance; persistent. -- Per`se*ver\"ing*ly, adv."
+    ],
+    "pronunciation": "P ER0 S AH0 V IH1 R IH0 NG"
+  }
 }
 ```
 
@@ -199,7 +220,7 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Random Word API](https://apiverve.com/marketplace/randomwords?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Random Word API](https://apiverve.com/marketplace/randomwords?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
