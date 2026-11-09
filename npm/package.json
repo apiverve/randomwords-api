@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/randomwords",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Random Word is a random word generator API that selects a random English word from the dictionary on each request. Paid plans add dictionary definitions and ARPABET phonetic pronunciation.",
   "main": "index.js",
   "types": "index.d.ts",
